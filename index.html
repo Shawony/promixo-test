@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Food Delivery Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="absolute w-[100vw] overflow-x-hidden">
+
+    <!-- Navbar Section -->
+    <nav class="navbar-container">
+        <!-- Navbar Container -->
+        <a href="#" class="logo">
+            <img src="./images/logo.png" alt="Logo">
+        </a>
+        <div class="overlay">
+            <button class="hamburger-close-button">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="nav-links-container">
+            <li class="nav-link-li"><a href="#" class="nav-link">Restaurants</a></li>
+            <li class="nav-link-li"><a href="#" class="nav-link">Recipies</a></li>
+            <li class="nav-link-li"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-link-li dropdown-item"><a href="#" class="nav-link"><span>Pages</span><i
+                        class="fa-solid fa-chevron-down"></i></a>
+                <!-- Dropdown will go here -->
+                <ul class="dropdown-container hide">
+                    <li class="dropdown-link-li"><a href="#" class="dropdown-link">Page 1</a></li>
+                    <li class="dropdown-link-li"><a href="#" class="dropdown-link">Page 2</a></li>
+                    <li class="dropdown-link-li"><a href="#" class="dropdown-link">Page 3</a></li>
+                    <li class="dropdown-link-li"><a href="#" class="dropdown-link">Page 4</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Navbar Button -->
+        <div class="navbar-button-container">
+            <button class="navbar-button">
+                Login
+            </button>
+            <button class="navbar-button active">
+                Sign Up
+            </button>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <button class="hamburger-menu-button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+
+    <!--hero-->
+    <section
+        class="flex flex-col md:flex-row md:items-center md:mt-30 mt-20 md:max-w-[1200px] w-[90%] md:w-full mx-auto md:gap-8 gap-4">
+        <div class="flex flex-col gap-5 flex-1">
+            <h1 class="md:text-6xl text-3xl font-bold">Your Favorite Food Delivery Partner</h1>
+            <p class="text-[#191720] md:text-lg text-sm">
+                The food at your doorstep. Why starve when you have us. You hunger partner. Straight out of the oven to
+                your doorstep.
+            </p>
+
+            <div class="flex items-center bg-[#F6F6F6] gap-1 justify-between max-w-[450px] rounded-full pr-2">
+                <input type="text" name="location" placeholder="Enter your delivery location"
+                    class="px-4 py-3 outline-none text-[#AFAFAF] bg-transparent flex-1">
+                <button type="submit" name="submit"
+                    class="px-4 py-2 text-white bg-[#FF5331] font-medium rounded-full">Order
+                    Now</button>
+            </div>
+
+            <div class="flex md:flex-row flex-col items-center w-full gap-4">
+                <button class="bg-[#F4F4F4] md:w-max w-full py-4 px-6 rounded-md flex items-center gap-2"><img
+                        src="images/Apple logo.png" alt="">
+                    <div class="flex flex-col items-start">
+                        <p class="text-base font-normal">Download on the</p>
+                        <p class="text-2xl font-semibold">App Store</p>
+                    </div>
+                </button>
+                <button class="bg-[#F4F4F4] md:w-max w-full py-4 px-6 rounded-md flex items-center gap-2"><img
+                        src="images/Google Play logo.png" alt="">
+                    <div class="flex flex-col items-start">
+                        <p class="text-base font-normal">GET IT ON</p>
+                        <p class="text-2xl font-semibold">Google Play</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="flex-1 bg-[#F2EBDA] rounded-2xl p-4 pb-0 mmax-w-[350px] md:max-w-[500px]"><img
+                src="images/banner-image.png" class="object-cover"></div>
+    </section>
+
+
+    <!-- 10,0000 Dishes Section -->
+    <section class="md:mt-30 mt-20 md:max-w-[1200px] md:w-full w-[90%] mx-auto">
+        <div class="text-center">
+            <h2 class="text-[#191720] text-2xl font-semibold">More Than <span class="text-[#FF5331]">10,000</span>
+                Dishes <br class="hidden md:block"> To
+                Order!</h2>
+            <p class="md:mt-4 mt-2 text-[#191720] font-normal text-sm">Welcome to The Biggest Network of Food Ordering &
+                Delivery</p>
+        </div>
+
+        <div class="mt-10 flex md:flex-row flex-col items-stretch justify-center gap-5">
+            <div class="flex md:items-stretch md:flex-nowrap items-center gap-4 flex-1 md:justify-end">
+                <div class="bg-[#e2e1e1] px-6 py-4 rounded-xl flex flex-col items-center justify-center gap-3">
+                    <div
+                        class="p-3 bg-white md:h-[80px] h-[50px] w-[50px] md:w-[80px] rounded-full flex items-center justify-center">
+                        <img src="images/Pizza.png">
+                    </div>
+                    <p class="text-xl font-medium">Pizza</p>
+                </div>
+                <div class="bg-[#e2e1e1] px-6 py-4 rounded-xl flex flex-col items-center justify-center gap-3">
+                    <div
+                        class="p-3 bg-white md:h-[80px] h-[50px] w-[50px] md:w-[80px] rounded-full flex items-center justify-center">
+                        <img src="images/Burger.png">
+                    </div>
+                    <p class="text-xl font-medium">Burger</p>
+                </div>
+                <div class="bg-[#e2e1e1] px-6 py-4 rounded-xl flex flex-col items-center justify-center gap-3">
+                    <div
+                        class="p-3 bg-white md:h-[80px] h-[50px] w-[50px] md:w-[80px] rounded-full flex items-center justify-center">
+                        <img src="images/Sushi.png">
+                    </div>
+                    <p class="text-xl font-medium">Sushi</p>
+                </div>
+            </div>
+
+            <div class="bg-[#e2e1e1] flex-1 p-4 pb-0 rounded-xl md:relative">
+                <p class="text-xl font-medium mb-4">Find <span class="text-[#FF5331]">deals</span>, <span
+                        class="text-[#009D00]">free delivery</span>, and more <br class="hidden md:block">
+                    from
+                    our
+                    restaurant
+                    partners.</p>
+                <div class="md:absolute ml-auto w-max bottom-0 right-2"><img src="images/scooty-1.png"
+                        class="object-contain">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mt-10 flex md:flex-row-reverse flex-col-reverse items-stretch justify-center gap-5 mx-auto">
+            <div class="flex flex-1 items-stretch gap-4 md:justify-start">
+                <div class="bg-[#e2e1e1] px-6 py-4 rounded-xl flex flex-col items-center justify-center gap-3">
+                    <div
+                        class="p-3 bg-white md:h-[80px] h-[50px] w-[50px] md:w-[80px] rounded-full flex items-center justify-center">
+                        <img src="images/Pasta.png">
+                    </div>
+                    <p class="text-xl font-medium">Paste</p>
+                </div>
+                <div class="bg-[#e2e1e1] px-6 py-4 rounded-xl flex flex-col items-center justify-center gap-3">
+                    <div
+                        class="p-3 bg-white md:h-[80px] h-[50px] w-[50px] md:w-[80px] rounded-full flex items-center justify-center">
+                        <img src="images/Salad.png">
+                    </div>
+                    <p class="text-xl font-medium">Salad</p>
+                </div>
+                <div class="bg-[#e2e1e1] px-6 py-4 rounded-xl flex flex-col items-center justify-center gap-3">
+                    <div
+                        class="p-3 bg-white md:h-[80px] h-[50px] w-[50px] md:w-[80px] rounded-full flex items-center justify-center">
+                        <img src="images/Dessert.png">
+                    </div>
+                    <p class="text-xl font-medium">Dessert</p>
+                </div>
+            </div>
+
+            <div class="p-4 flex justify-end flex-col gap-4 flex-1 pb-0 pr-0 rounded-xl max-w-max">
+                <div class="flex justify-start"><img src="images/Vector (1).png"></div>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore
+                    et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit.”</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- How to Order Section -->
+    <section class="md:mt-30 mt-20 md:max-w-[1200px] md:w-full w-[90%] mx-auto">
+        <h2 class="text-[#191720] text-2xl font-semibold text-center">How To Order?</h2>
+
+        <div class="mt-10 flex flex-wrap md:flex-nowrap gap-6 items-stretch justify-evenly">
+            <div
+                class="relative bg-[#e2e1e1] flex flex-col gap-4 items-center justify-center max-w-[150px] px-4 py-6 rounded-xl">
+                <span class="absolute -top-7 left-0 text-4xl text-[#FF5331] -z-10 font-semibold">01</span>
+                <div class="h-[50px] w-[50px] bg-white rounded-xl p-2"><img src="images/location.png"
+                        class="w-full h-full object-cover"></div>
+                <p class="text-center text-lg text-[#191720] font-medium">Choose your location</p>
+            </div>
+            <div
+                class="relative bg-[#e2e1e1] flex flex-col gap-4 items-center justify-center max-w-[150px] px-4 py-6 rounded-xl">
+                <span class="absolute -top-7 left-0 text-4xl text-[#FF5331] -z-10 font-semibold">02</span>
+                <div class="h-[50px] w-[50px] bg-white rounded-xl p-2"><img src="images/choose.png"
+                        class="w-full h-full object-cover"></div>
+                <p class="text-center text-lg text-[#191720] font-medium">Choose what ot eat</p>
+            </div>
+            <div
+                class="relative bg-[#e2e1e1] flex flex-col gap-4 items-center justify-center max-w-[150px] px-4 py-6 rounded-xl">
+                <span class="absolute -top-7 left-0 text-4xl text-[#FF5331] -z-10 font-semibold">03</span>
+                <div class="h-[50px] w-[50px] bg-white rounded-xl p-2"><img src="images/Burger.png"
+                        class="w-full h-full object-cover"></div>
+                <p class="text-center text-lg text-[#191720] font-medium">Make your first order</p>
+            </div>
+            <div
+                class="relative bg-[#e2e1e1] flex flex-col gap-4 items-center justify-center max-w-[150px] px-4 py-6 rounded-xl">
+                <span class="absolute -top-7 left-0 text-4xl text-[#FF5331] -z-10 font-semibold">04</span>
+                <div class="h-[50px] w-[50px] bg-white rounded-xl p-2"><img src="images/home.png"
+                        class="w-full h-full object-cover"></div>
+                <p class="text-center text-lg text-[#191720] font-medium">Now! Your food in way</p>
+            </div>
+
+
+        </div>
+        <!-- <div class="choose"><img src="images/choose.png">Choose what to eat</div> -->
+        <!-- <div class=""><img src="images/Burger.png">May your first order</div> -->
+        <!-- <div class=""><img src="images/home.png">now! Your food in way</div> -->
+
+    </section>
+
+    <!-- Review Section -->
+    <section class="md:mt-30 mt-20 md:max-w-[1200px] md:w-full w-[90%] mx-auto">
+        <h2 class="text-[#191720] text-2xl font-semibold text-center">Our Clients Feedback</h2>
+        <p class="md:mt-4 mt-2 text-[#191720] font-normal text-sm text-center">The food at your doorstep. Why starve
+            when
+            you
+            have us. You
+            hunger <br> partner. Straight out of the oven to
+            your
+            doorstep.</p>
+
+
+        <div class="mt-10 flex flex-col gap-3 md:gap-5 items-center justify-center">
+
+            <div class="vector w-8 h-8 md:w-auto md:h-auto"><img src="images/Vector.png" class="object-cover"></div>
+            <p class="max-w-[768px] text-center text-[#000000] text-base md:text-2xl font-medium italic">“Lorem ipsum
+                dolor sit amet,
+                consectetur
+                adipiscing elit, sed do
+                eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi”</p>
+
+            <div class="text-center mt-4">
+                <p1 class="text-sm md:text-lg text-[#111111] font-semibold">Mitchell Marsh<br></p1>
+                <p2 class="text-xs md:text-sm text-[#616161]">CEO, Bexon Agency</p2>
+            </div>
+
+            <div class="flex items-center justify-center gap-4">
+                <button class="w-[30px] h-[30px] flex items-center justify-center rounded-full bg-[#e2e1e1]">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <!-- For Active change the bg color and the text color -->
+                <button class="w-[30px] h-[30px] flex items-center justify-center rounded-full text-white bg-[#FF5331]">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- News Letter Section -->
+    <section class="md:mt-30 mt-20 bg-[#FFEFEC] py-20">
+        <div
+            class="md:max-w-[1200px] md:w-full w-[90%] mx-auto flex flex-col md:flex-row gap-4 md:items-center justify-between">
+
+            <div class="space-y-2 md:space-y-4 flex-1">
+                <h2 class="text-2xl md:text-5xl font-semibold">Subscribe our newsletter</h2>
+                <p class="text-sm md:text-base">Browse local restaurants and businesses for delivery by entering your
+                    address blow.</p>
+            </div>
+
+            <div class="flex items-center bg-white gap-1 justify-between max-w-[450px] rounded-full flex-1 pr-2">
+                <input type="email" name="email" placeholder="Enter your email address"
+                    class="px-4 py-3 outline-none text-[#AFAFAF] bg-transparent">
+                <button type="submit" name="submit"
+                    class="px-4 py-2 text-white bg-[#FF5331] font-medium rounded-full">Send</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-20 bg-black">
+
+        <div class="md:max-w-[1200px] md:w-full w-[90%] mx-auto">
+
+            <div class=" flex flex-col md:flex-row md:items-center justify-center md:gap-8 gap-4">
+
+                <div class="flex-[2]">
+                    <a href="#"><img src="images/logo.png"></a>
+                    <div class="flex flex-col md:flex-row md:items-center max-w-max gap-4 mt-10">
+                        <button class="bg-[#F4F4F4] py-4 px-6 rounded-md flex items-center gap-2"><img
+                                src="images/Apple logo.png" alt="">
+                            <div class="flex flex-col items-start">
+                                <p class="text-sm font-normal">Download on the</p>
+                                <p class="text-lg font-semibold">App Store</p>
+                            </div>
+                        </button>
+                        <button class="bg-[#F4F4F4] py-4 px-6 rounded-md flex items-center gap-2"><img
+                                src="images/Google Play logo.png" alt="">
+                            <div class="flex flex-col items-start">
+                                <p class="text-sm font-normal">GET IT ON</p>
+                                <p class="text-lg font-semibold">Google Play</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-6 md:mt-0 flex-[3] flex flex-col md:flex-row md:items-start justify-between gap-4">
+                    <div class="space-y-4">
+                        <h3 class="text-lg text-[#FFFFFF]">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li class="text-base text-[#B5B2B2]"><a href="#">Features</a></li>
+                            <li class="text-base text-[#B5B2B2]"><a href="#">Food Menu</a></li>
+                            <li class="text-base text-[#B5B2B2]"><a href="#">Offer</a></li>
+                            <li class="text-base text-[#B5B2B2]"><a href="#">Review</a></li>
+                            <li class="text-base text-[#B5B2B2]"><a href="#">Rider</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 class="text-lg text-[#FFFFFF]">Get to Know Us</h3>
+                        <ul class="space-y-2">
+                            <li class="text-base text-[#B5B2B2]"><a href="#">Gift Cards</a></li>
+                            <li class="text-base text-[#B5B2B2]"><a href="#">DoorDash Stories</a></li>
+                            <li class="text-base text-[#B5B2B2]"><a href="#">LinkedIn</a></li>
+                            <li class="text-base text-[#B5B2B2]"><a href="#">Glassdoor</a></li>
+                            <li class="text-base text-[#B5B2B2]"><a href="#">Accessibility</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 class="text-lg text-[#FFFFFF]">News</h3>
+                        <ul class="space-y-2">
+                            <li class="text-base text-[#B5B2B2]"><a href="#">Blog</a></li>
+                            <li class="text-base text-[#B5B2B2]"><a href="#">FAQ</a></li>
+                            <li class="text-base text-[#B5B2B2]"><a href="#">Lift Media</a></li>
+                            <li class="text-base text-[#B5B2B2]"><a href="#">Press</a></li>
+                            <li class="text-base text-[#B5B2B2]"><a href="#">Press Kit</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 class="text-lg text-[#FFFFFF]">Contact</h3>
+                        <ul class="space-y-2">
+                            <li class="text-base text-[#B5B2B2]"><a href="#">WhatsApp</a></li>
+                            <li class="text-base text-[#B5B2B2]"><a href="#">Support 24</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 mt-8 md:mt-20">
+                <p class="text-base text-[#B5B2B2]">&copy; 2023 pizza. All right reserved</p>
+                <ul class="flex items-center md:justify-center gap-5">
+                    <li class="text-base text-[#B5B2B2]"><a href="#">Privacy</a></li>
+                    <li class="text-base text-[#B5B2B2]"><a href="#">Policy</a></li>
+                    <li class="text-base text-[#B5B2B2]"><a href="#">Terms</a></li>
+                    <li class="text-base text-[#B5B2B2]"><a href="#">Services</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
